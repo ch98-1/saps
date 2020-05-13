@@ -6,7 +6,11 @@ Small ARM-Like Processor Simulator. Processor simulator/emulator that can simula
 Usage:   
 saps <cpu type id number> <number of cycles to simulate> <register file input/output file directiry> <Instruction Memory input/output file directiry> <Data Memory input/output file directiry>    
 
-all input files must be hex with 1 element per line   
+All input files must be hex with 1 element per line.   
+Skipping lines will cause errors.    
+Hex values must be the first thing on the line.    
+Hex values longer than 16 bit/4 digits will cause errors.   
+Last line may have a newline, but it is not necessary.
 
 CPU type ID's:   
 0: Standard baseline cpu. Not implemented yet   
